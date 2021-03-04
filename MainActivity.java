@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 savedInstanceState.containsKey("counter")) {
             count = savedInstanceState.getInt("counter");
         }
+        Toast.makeText(this, "onRestoreInstanceState()", Toast.LENGTH_LONG).show();
         Log.d(TAG, "onRestoreInstanceState");
     }
 
